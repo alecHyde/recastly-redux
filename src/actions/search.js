@@ -8,7 +8,7 @@ var handleVideoSearch = (q) => {
  
   //TODO:  Write an asynchronous action to handle a video search!
   return () => {
-    type: 'HANDLE_VIDEO_SEARCH',
+    // type: 'HANDLE_VIDEO_SEARCH',
     searchYouTube({key: YOUTUBE_API_KEY, query: q, max: 5}, (videos) => {
       changeVideoList(videos);
       changeVideo(videos[0]);

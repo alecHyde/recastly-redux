@@ -21,23 +21,26 @@ import React from 'react';
 //   }
 // }
 
-var Search = ({ handleSearchInputChange }) => (
-  <div className="search-bar form-inline">
-    <input
-      className="form-control"
-      type="text" 
-      onChange={(e) => {
-        handleSearchInputChange(e.target.value)
-      }} 
-    />
-      {/*value={this.state.value}*/}
-      {/*onChange={this.handleInputChange.bind(this)}*/}
-    <button className="btn hidden-sm-down">
-      <span className="glyphicon glyphicon-search"></span>
-    </button>
-  </div>
+var Search = ({ handleSearchInputChange }) => {
+  console.log(handleSearchInputChange)
+  return(
+    <div className="search-bar form-inline">
+      <input
+        className="form-control"
+        type="text" 
+        onChange={(e) => {
+          handleSearchInputChange(e.target.value)
+        }} 
+      />
+        {/*value={this.state.value}*/}
+        {/*onChange={this.handleInputChange.bind(this)}*/}
+      <button className="btn hidden-sm-down">
+        <span className="glyphicon glyphicon-search"></span>
+      </button>
+    </div>
+  )
 
-)
+}
 
 
 
