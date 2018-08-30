@@ -4,17 +4,6 @@ import rootReducer from './../reducers/main.js';
 
 const store = createStore(rootReducer, applyMiddleware(thunk));
 
-// const store = createStore(rootReducer, ['Use Redux'])
-
-// export default store;
-
-// const store = new Store(reducers, initialState);
-
-// const configureStore = preloadedState => createStore(
-//   rootReducer,
-//   preloadedState,
-//   applyMiddleware(thunk, api)
-// )
 
 export default store;
 
